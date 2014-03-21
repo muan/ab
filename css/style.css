@@ -4,6 +4,7 @@ body, input {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 * {
@@ -12,6 +13,11 @@ body, input {
 }
 
 a { color: #c55; text-decoration: none; }
+
+.fork-me {
+  position: absolute;
+  top: 0; right: 0;
+}
 
 .a {
   color: #0cc;
