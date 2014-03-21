@@ -31,7 +31,7 @@ function feedback(times) {
   } else if (times <= 10) {
     return "good job yo!"
   } else if (times <= 20) {
-    return "meh, I think you can do better."
+    return "meh.. I think you can do better."
   } else if (times <= 30) {
     return "lolol wat?"
   } else if (times <= 40) {
