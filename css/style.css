@@ -1,0 +1,91 @@
+body, input {
+  font-family: "Changa One", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a { color: #c55; text-decoration: none; }
+
+.a {
+  color: #0cc;
+}
+
+.b {
+  color: #cc0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.ab {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.the-game {
+  font-size: 24px;
+  line-height: 1;
+  color: #aaa;
+  margin-top: -10px;
+}
+
+.wow {
+  color: #c33;
+}
+
+footer {
+  margin: 50px auto 20px;
+  font-size: 14px;
+}
+
+.attempt {
+  font-size: 50px;
+  width: 140px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.attempt:focus {
+  outline: none;
+}
+
+.counter {
+  font-size: 11px;
+  color: #ccc;
+}
+
+.guess {
+  margin: 25px auto;
+}
+
+.guess:after {
+  content: " ";
+  margin: auto;
+  margin-top: 25px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.guess:last-child:after {
+  content: none;
+}
+
+.number {
+  color: #555;
+}
+
+.outcome {
+
+}
