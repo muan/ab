@@ -1,4 +1,4 @@
-window.answer = '2000'//newNumber()
+window.answer = newNumber()
 
 $(document).on('submit', '#attempt', function(event) {
   guess(this.elements[0].value)
