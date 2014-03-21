@@ -41,6 +41,11 @@ header {
   color: #c33;
 }
 
+.guess-area {
+  margin: 50px auto;
+  color: #555;
+}
+
 footer {
   margin: 50px auto 20px;
   font-size: 14px;

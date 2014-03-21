@@ -10,7 +10,7 @@ function guess(number) {
   outcome = testAgainstAnswer(window.answer, number)
   counter = $('.guess').length + 1
   if(outcome[0] == 4) {
-    $('.guess-area').html('♛<br>oh yeah!<br>the answer is <span class=wow>' + window.answer + '</span>!<br>you got the answer at the ' + nth(counter) + ' attemp.<br>' + feedback(counter))
+    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + window.answer + '</span> is right!<br>you got it at the ' + nth(counter) + ' attemp.<br>' + feedback(counter))
   } else {
     $('#guesses').prepend('<div class=guess><div class=counter>attempt ' + counter + '</div><div class=number>' + number + '</div><div class=outcome><span class=a>' + outcome[0] + 'a</span><span class=b>' + outcome[1] + 'b'  + '</span></div></div>')
   }
@@ -27,13 +27,13 @@ function feedback(times) {
   } else if (times == 4) {
     return "I don't believe you, play again!"
   } else if (times == 5) {
-    return "wow so good"
+    return "wow so good!"
   } else if (times <= 10) {
     return "good job yo!"
   } else if (times <= 20) {
-    return "meh, you can do better"
+    return "meh, I think you can do better."
   } else if (times <= 30) {
-    return "lolol wat"
+    return "lolol wat?"
   } else if (times <= 40) {
     return "some people got skills, some people..."
   } else {
@@ -53,7 +53,8 @@ function testAgainstAnswer(answer, attempt) {
 
   $.each(answer_arr, function(index, num) {
     if(attempt_arr[index] == answer_arr[index]) {
-      answer_arr[index] = ''
+      answer_arr[index] = 'x'
+      attempt_arr[index] = 'o'
       a+=1
     }
   })
