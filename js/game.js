@@ -10,7 +10,7 @@ function guess(number) {
   outcome = testAgainstAnswer(window.answer, number)
   counter = $('.guess').length + 1
   if(outcome[0] == 4) {
-    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + window.answer + '</span> is right!<br>you got it at the ' + nth(counter) + ' attemp.<br>' + feedback(counter))
+    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the ' + nth(counter) + ' attempt.<br>' + feedback(counter))
   } else {
     $('#guesses').prepend('<div class=guess><div class=counter>attempt ' + counter + '</div><div class=number>' + number + '</div><div class=outcome><span class=a>' + outcome[0] + 'a</span><span class=b>' + outcome[1] + 'b'  + '</span></div></div>')
   }
