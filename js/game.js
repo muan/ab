@@ -29,12 +29,14 @@ function feedback(times) {
   } else if (times == 5) {
     return "wow so good!"
   } else if (times <= 10) {
-    return "good job yo!"
+    return "you've got skills!"
   } else if (times <= 20) {
-    return "meh.. I think you can do better."
+    return "good job yo!"
   } else if (times <= 30) {
-    return "lolol wat?"
+    return "meh.. I think you can do better."
   } else if (times <= 40) {
+    return "lolol wat?"
+  } else if (times <=550) {
     return "some people got skills, some people..."
   } else {
     return "I don't think you know how to play this game.."
