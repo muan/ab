@@ -44,7 +44,7 @@ function feedback(times) {
 }
 
 function newNumber() {
-  return (Math.random()*10000).toString().slice(0,4)
+  return (Math.random()).toString().slice(2,6)
 }
 
 function testAgainstAnswer(answer, attempt) {
