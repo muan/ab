@@ -24,10 +24,10 @@ function guess(number) {
 }
 
 function restart() {
-  console.log('')
   window.answer = newNumber()
   $('#guesses').html('')
   $('.guess-area').html(guessHtml)
+  $('.attempt').focus()
 }
 
 function feedback(times) {
