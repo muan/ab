@@ -1,4 +1,4 @@
-window.answer = newNumber()
+window.answer = 2100// newNumber()
 
 $(document).on('submit', '#attempt', function(event) {
   guess(this.elements[0].value)
@@ -6,15 +6,28 @@ $(document).on('submit', '#attempt', function(event) {
   return false
 })
 
+$(document).on('click', '#restart', function(event) {
+  restart()
+  return false
+})
+
 function guess(number) {
   outcome = testAgainstAnswer(window.answer, number)
   counter = $('.guess').length + 1
   if(outcome[0] == 4) {
-    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter))
+    window.guessHtml = $('.guess-area').html()
+    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter) + '<br><a href="#" id="restart">Restart!</a>')
   } else {
     $('#guesses').prepend('<div class=guess><div class=counter>attempt ' + counter + '</div><div class=number>' + number + '</div><div class=outcome><span class=a>' + outcome[0] + 'a</span><span class=b>' + outcome[1] + 'b'  + '</span></div></div>')
   }
   return false
+}
+
+function restart() {
+  console.log('')
+  window.answer = newNumber()
+  $('#guesses').html('')
+  $('.guess-area').html(guessHtml)
 }
 
 function feedback(times) {
