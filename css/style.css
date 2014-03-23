@@ -59,10 +59,16 @@ footer {
 
 .attempt {
   font-size: 50px;
-  width: 140px;
-  margin: 20px auto;
+  width: 160px;
+  margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+.help-text {
+  font-size: 12px;
+  margin: 5px 0 0;
+  color: #999;
 }
 
 .attempt:focus {
