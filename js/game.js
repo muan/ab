@@ -1,4 +1,5 @@
-window.answer = 2010//newNumber()
+window.answer = newNumber()
+
 $(document).on('ready', function() {
   $('.attempt').focus()
 })
