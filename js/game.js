@@ -97,15 +97,15 @@ function nth(number) {
   ordered  = number.toString()
   leftover = number % 10
   if(number > 3 && number < 21) {
-    ordered += 'th'
+    ordered += '<sup>th</sup>'
   } else if(leftover == 1) {
-    ordered += 'st'
+    ordered += '<sup>st</sup>'
   } else if(leftover == 2) {
-    ordered += 'nd'
+    ordered += '<sup>nd</sup>'
   } else if(leftover == 3) {
-    ordered += 'rd'
+    ordered += '<sup>rd</sup>'
   } else {
-    ordered += 'th'
+    ordered += '<sup>th</sup>'
   }
   return ordered
 }
