@@ -1,4 +1,7 @@
-window.answer = newNumber()
+window.answer = 2010//newNumber()
+$(document).on('ready', function() {
+  $('.attempt').focus()
+})
 
 $(document).on('submit', '#attempt', function(event) {
   guess(this.elements[0].value)
@@ -16,7 +19,8 @@ function guess(number) {
   counter = $('.guess').length + 1
   if(outcome[0] == 4) {
     window.guessHtml = $('.guess-area').html()
-    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter) + '<br><a href="#" id="restart">Restart!</a>')
+    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter) + '<br><a href="#" class="restart" id="restart">Restart!</a>')
+    $('#restart').focus()
   } else {
     $('#guesses').prepend('<div class=guess><div class=counter>attempt ' + counter + '</div><div class=number>' + number + '</div><div class=outcome><span class=a>' + outcome[0] + 'a</span><span class=b>' + outcome[1] + 'b'  + '</span></div></div>')
   }

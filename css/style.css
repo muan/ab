@@ -103,6 +103,19 @@ footer {
   color: #555;
 }
 
-.outcome {
+.restart {
+  color: #fff;
+  background: #0a6;
+  line-height: 1;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px auto;
+  border: 5px solid #fff;
+}
 
+.restart:focus {
+  box-shadow: 0 0 4px #094;
+  outline: none;
+/*  border: 1px solid #047;*/
 }
