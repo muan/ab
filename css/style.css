@@ -103,9 +103,8 @@ footer {
   color: #555;
 }
 
-.restart {
+.btn {
   color: #fff;
-  background: #0a6;
   line-height: 1;
   padding: 4px 10px;
   display: inline-block;
@@ -114,8 +113,23 @@ footer {
   border: 5px solid #fff;
 }
 
+.restart {
+  background: #0a6;
+}
+
+.tweet-btn {
+  background: #06a;
+}
+
 .restart:focus {
   box-shadow: 0 0 4px #094;
+}
+
+.tweet-btn:focus {
+  box-shadow: 0 0 4px #049;
+}
+
+.btn:focus {
   outline: none;
 }
 
