@@ -20,7 +20,7 @@ function guess(number) {
   counter = $('.guess').length + 1
   if(outcome[0] == 4) {
     window.guessHtml = $('.guess-area').html()
-    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter) + '<br><a href="#" class="restart btn" id="restart">Restart!</a> <a href="https://twitter.com/share?text=The%20answer%20is%20' + window.answer + '!%20I%20figured%20it%20out%20within%20' + counter + '%20guesses%20without%20cheating%20yo!%20Come%20challenge%20me!&url=https%3A%2F%2Fab.muan.co" class="tweet-btn btn" target="_blank">Tweet</a>')
+    $('.guess-area').html('♛<br>oh yeah!<br><span class=wow>' + number + '</span> is right!<br>you got it at the <span class=b>' + nth(counter) + '</span> attempt.<br>' + feedback(counter) + '<br><a href="#" class="restart btn" id="restart">Restart!</a> <a href="https://twitter.com/share?text=The%20answer%20is%20' + window.answer + '!%20I%20figured%20it%20out%20within%20' + counter + '%20guesses%20without%20cheating%20yo!%20Come%20challenge%20me!&url=http%3A%2F%2Fab.muan.co" class="tweet-btn btn" target="_blank">Tweet</a>')
     $('#restart').focus()
   } else {
     $('#guesses').prepend('<div class=guess><div class=counter>attempt ' + counter + '</div><div class=number>' + number + '</div><div class=outcome><span class=a>' + outcome[0] + 'a</span><span class=b>' + outcome[1] + 'b'  + '</span></div></div>')
