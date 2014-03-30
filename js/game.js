@@ -15,6 +15,12 @@ $(document).on('click', '#restart', function(event) {
   return false
 })
 
+$(document).on('click', '.help-link', function(event) {
+  $('.howto-area, .guess-area').toggle()
+  $('.attempt').focus()
+  return false
+})
+
 function guess(number) {
   outcome = testAgainstAnswer(window.answer, number)
   counter = $('.guess').length + 1

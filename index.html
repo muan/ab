@@ -18,14 +18,23 @@
     <header>
       <div class="ab"><span class="a">A</span><span class="b">B</span></div>
       <div class="the-game">the game</div>
+      <a href="#" class="help-link howto">How to play this game?</a>
     </header>
+    <div class="howto-area">
+      <p>The goal of this game is to guess a 4-digit number within the least number of attempts possible.</p>
+      <p>With every guess, you will get a feedback indicating how many <span class="a">A</span> and <span class="b">B</span> you got with the guess.</p>
+      <p>An <span class="a">A</span> means: one of the digits is correct, and is also at the right place.</p>
+      <p>A <span class="b">B</span> means: one of the digits is a right number, but not at the right place.</p>
+      <p>For example, given that the answer is <span class="wow">0130</span>, a guess of <span class="a">3610</span> will receive <span class="a">1A</span><span class="b">2B</span>. <span class="a">1A</span> is <span class="wow">0</span>, <span class="b">2B</span> are <span class="wow">1</span> and <span class="wow">3</span>.</p>
+      <p>Ready? <a href="#" class="help-link go">Start!</a></p>
+    </div>
     <div class="guess-area">
       <form id="attempt">
         <input class="attempt" type="text" required value="0000" pattern="[0-9]{4}" maxlength="4" />
         <p class="help-text">Press [enter] to guess.</p>
       </form>
-    </div>
-    <div id="guesses">
+      <div id="guesses">
+      </div>
     </div>
 
     <footer><a href="https://github.com/muan/ab">https://github.com/muan/ab</a></footer>

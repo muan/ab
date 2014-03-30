@@ -19,6 +19,11 @@ a { color: #c55; text-decoration: none; }
   top: 0; right: 0;
 }
 
+.a, .b, .wow, .help-link {
+  text-transform: uppercase;
+  font-family: "Changa One", "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
 .a {
   color: #0cc;
 }
@@ -137,3 +142,32 @@ sup {
   font-size: 16px;
   color: #999;
 }
+
+.help-link {
+  font-size: 20px;
+  font-weight: normal;
+  color: #08c;
+  border-bottom: 1px solid #08c;
+}
+
+.howto-area {
+  display: none;
+  width: 500px;
+  margin: auto;
+  padding: 35px;
+  font-size: 18px;
+  text-align: left;
+  border-radius: 20px;
+  border: 10px solid #f0f8fc;
+  color: #555;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  text-transform: none;
+}
+
+.howto-area .a, .howto-area .b, .howto-area .wow {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
