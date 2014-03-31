@@ -16,7 +16,7 @@ $(document).on('click', '#restart', function(event) {
 })
 
 $(document).on('click', '.help-link', function(event) {
-  $('.howto-area, .guess-area').toggle()
+  $('.howto-area, .guess-area, #guesses').toggle()
   $('.attempt').focus()
   return false
 })
